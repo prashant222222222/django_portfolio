@@ -1,0 +1,24 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+{% include 'main/navbar.html' %}
+
+<div class="container">
+
+  <h1 class="center-align">SKILLS </h1>
+
+  <div class="row">
+    <ul class="collection col s12 m6 left-align">
+      {% for skill in skills %}
+          <li class="collection-item">{{ skill }}</li>
+          {% endfor %}
+    </ul>
+    <ul class="collection col s12 m6 left-align">
+      {% for skill in skills %}
+          <li class="collection-item">{{ skill }}</li>
+          {% endfor %}
+    </ul>
+  </div>
+
+</div>
+{% endblock %}
